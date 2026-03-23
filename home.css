@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    font-family: monospace;
+    color:white;
+    text-align:center;
+    }
+    
+    /* VIDEO BACKGROUND */
+    #bg-video{
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    object-fit:cover;
+    }
+    
+    /* HOME SECTION */
+    .home{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    }

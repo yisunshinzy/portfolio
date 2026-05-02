@@ -8,6 +8,30 @@
 </head>
 <body>
 
+    <div id="background"></div>
+    <div class="container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
+    <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      VANTA.WAVES({
+        el: "#background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200,
+        minWidth: 200,
+        scale: 1,
+        scaleMobile: 1,
+        color: 0x3c3c3c,
+        shininess: 150,
+        waveHeight: 29,
+        waveSpeed: 1.75,
+        zoom: 0.65
+      });
+    });
+    </script>
+
     <header class="header">
         <div class="logo">
             <a href="index.html">My Portfolio</a>

@@ -52,26 +52,63 @@
 
     <div class="cert">
 
+        <!-- CERT 1 -->
         <div class="certificate">
-            <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" target="_blank">
-                <img src="images/certifcates/cert1.jpg">
-            </a>
-            <div class="cert-info">
+            <img src="images/certifcates/cert1.jpg" class="cert-img">
+
+            <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" class="cert-info">
                 <p class="cert-name">PowerPoint Associate Certificate</p>
-                <p class="cert-date">Date: May 16, 2025</p>
-            </div>
+                <p class="cert-date">May 16, 2025</p>
+            </a>
         </div>
 
+        <!-- CERT 2 -->
         <div class="certificate">
-            <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" target="_blank">
-                <img src="images/certifcates/cert2.jpg">
-            </a>
-            <div class="cert-info">
+            <img src="images/certifcates/cert2.jpg" class="cert-img">
+
+            <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" class="cert-info">
                 <p class="cert-name">Word Associate Certificate</p>
-                <p class="cert-date">Date: February 14, 2025</p>
-            </div>
+                <p class="cert-date">February 14, 2025</p>
+            </a>
         </div>
+
+    </div>
 </section>
+
+<!-- MODAL (ENLARGE IMAGE) -->
+<div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.querySelector(".close");
+
+    const images = document.querySelectorAll(".cert-img");
+
+    images.forEach(img => {
+        img.addEventListener("click", function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+});
+</script>
    
 </body>
 </html>

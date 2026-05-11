@@ -98,7 +98,6 @@ body{
 /* ----------ABOUT---------- */
 .abouttitle{
     text-align: center;
-    
 }
 .about{
     display:flex;
@@ -106,17 +105,17 @@ body{
     align-items:center;
     gap:100px;
     flex-wrap: wrap;
-    margin-top: 150px;
+    margin-top: 10px;
 }
 .about-self{
-    max-width:500px;
+    max-width:1000px;
     
 }
 .about-self h2{
-    font-size:36px;
+    font-size:46px;
 }
 .about-self p{
-    font-size:18px;
+    font-size:28px;
     line-height:1.8;
     text-align: center;
 }

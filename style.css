@@ -140,31 +140,25 @@ body{
 
 /* CARD STYLE */
 .certificate {
-    width: 300px;
+    width: 400px;
     border-radius: 12px;
     overflow: hidden;
     backdrop-filter: blur(10px);
-    background: rgba(0,0,0,0.4);
+    background: rgba(6, 5, 5, 0.4);
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     transition: 0.3s;
 }
-
 .certificate:hover {
     transform: translateY(-10px);
 }
-
-/* IMAGE */
 .certificate img {
     width: 100%;
     cursor: pointer;
     transition: 0.3s;
 }
-
 .certificate img:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
-
-/* LABEL */
 .cert-info {
     display: block;
     padding: 15px;
@@ -173,18 +167,15 @@ body{
     background: linear-gradient(135deg, #111, #1c1c1c);
     transition: 0.3s;
 }
-
 .cert-info:hover {
     background: linear-gradient(135deg, #dadada, #949494);
 }
-
 /* TEXT */
 .cert-name {
     font-weight: bold;
     font-size: 16px;
     text-align: center;
 }
-
 .cert-verify {
     font-size: 13px;
     opacity: 0.8;
@@ -193,7 +184,6 @@ body{
 }
 
 /* ---------- MODAL ---------- */
- 
 .modal {
     display: none;
     position: fixed;
@@ -205,15 +195,13 @@ body{
     height: 100%;
     background-color: rgba(0,0,0,0.9);
 }
-
 .modal-content {
     margin: auto;
     display: block;
     width: 70%;
-    max-width: 800px;
+    max-width: 1200px;
     border-radius: 10px; 
 }
-
 .close {
     position: absolute;
     top: 20px;

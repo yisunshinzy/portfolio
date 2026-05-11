@@ -108,16 +108,17 @@ body{
     flex-wrap: wrap;
     margin-top: 150px;
 }
-.about-right{
+.about-self{
     max-width:500px;
     
 }
-.about-right h2{
+.about-self h2{
     font-size:36px;
 }
-.about-right p{
+.about-self p{
     font-size:18px;
     line-height:1.8;
+    text-align: center;
 }
 
 
@@ -163,7 +164,7 @@ body{
     transform: scale(1.05);
 }
 
-/* LABEL (CLICKABLE) */
+/* LABEL */
 .cert-info {
     display: block;
     padding: 15px;
@@ -181,11 +182,14 @@ body{
 .cert-name {
     font-weight: bold;
     font-size: 16px;
+    text-align: center;
 }
 
-.cert-date {
+.cert-verify {
     font-size: 13px;
     opacity: 0.8;
+    text-align: center;
+    
 }
 
 /* ---------- MODAL ---------- */
@@ -256,7 +260,7 @@ body{
 
 .btn {
     padding: 12px 25px;
-    background: #444;
+    background: #3e3e3e;
     color: white;
     text-decoration: none;
     margin: 10px;
@@ -264,7 +268,7 @@ body{
 }
 
 .btn:hover {
-    background: #666;
+    background: #656565;
 }
 
 

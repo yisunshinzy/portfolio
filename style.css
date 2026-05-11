@@ -174,7 +174,7 @@ body{
 }
 
 .cert-info:hover {
-    background: linear-gradient(135deg, #ff4d4d, #cc0000);
+    background: linear-gradient(135deg, #dadada, #949494);
 }
 
 /* TEXT */
@@ -207,7 +207,7 @@ body{
     display: block;
     width: 70%;
     max-width: 800px;
-    border-radius: 10px;
+    border-radius: 10px; 
 }
 
 .close {

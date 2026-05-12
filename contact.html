@@ -9,34 +9,12 @@
 <body>
 
     <div id="background"></div>
-    <div class="container"></div>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
-    <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      VANTA.WAVES({
-        el: "#background",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200,
-        minWidth: 200,
-        scale: 1,
-        scaleMobile: 1,
-        color: 0x3c3c3c,
-        shininess: 51,
-        waveHeight: 11,
-        waveSpeed: 0.3,
-        zoom: 0.65
-      });
-    });
-    </script>
 
     <header class="header">
         <div class="logo">
             <a href="index.html">Dan Jared Viernes</a>
         </div>
-   
+
         <nav>
             <a href="about.html" class="active">About</a>
             <a href="certifications.html">Certifications</a>
@@ -46,21 +24,35 @@
     </header>
 
     <section id="contact" class="section contact-section">
-     <h2>Contacts</h2>
-    <p class="contact-text">
-        If you want to stalk me, heres my accounts
-    </p>
+        <h2>Contacts</h2>
 
-    <div class="contact-buttons">
-        <a href="https://www.linkedin.com/in/dan-jared-viernes-021752351/" target="_blank" class="btn">
-            LinkedIn
-        </a>
+        <p class="contact-text">
+            If you want to stalk me, here's my accounts
+        </p>
 
-        <a href="https://github.com/yisunshinzy" target="_blank" class="btn">
-            GitHub
-        </a>
-    </div>
-</section>
-   
+        <div class="contact-buttons">
+
+            <a href="https://www.linkedin.com/in/dan-jared-viernes-021752351/" 
+               target="_blank" 
+               class="btn">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/yisunshinzy" 
+               target="_blank" 
+               class="btn">
+                GitHub
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Vanta Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+
 </body>
 </html>

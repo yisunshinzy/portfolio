@@ -9,34 +9,12 @@
 <body>
 
     <div id="background"></div>
-    <div class="container"></div>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
-    <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      VANTA.WAVES({
-        el: "#background",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200,
-        minWidth: 200,
-        scale: 1,
-        scaleMobile: 1,
-        color: 0x3c3c3c,
-        shininess: 51,
-        waveHeight: 11,
-        waveSpeed: 0.3,
-        zoom: 0.65
-      });
-    });
-    </script>
 
     <header class="header">
         <div class="logo">
             <a href="index.html">Dan Jared Viernes</a>
         </div>
-   
+
         <nav>
             <a href="about.html" class="active">About</a>
             <a href="certifications.html">Certifications</a>
@@ -44,41 +22,48 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-   
+
     <section id="tech" class="section">
-    <h2 class="techstacks">Tech Stack</h2>
+        <h2 class="techstacks">Tech Stack</h2>
 
-    <div class="tech">
+        <div class="tech">
 
-        <div class="tech-column">
-            <h3>Front End</h3>
-            <div class="tech-box"><img src="images/teckstacks/html.png"><p>HTML</p></div>
-            <div class="tech-box"><img src="images/teckstacks/css.png"><p>CSS</p></div>
-            <div class="tech-box"><img src="images/teckstacks/git.png"><p>GIT/GITHUB</p></div>
-            <div class="tech-box"><img src="images/teckstacks/vscode.png"><p>VSCode</p></div>
+            <div class="tech-column">
+                <h3>Front End</h3>
+                <div class="tech-box"><img src="images/teckstacks/html.png"><p>HTML</p></div>
+                <div class="tech-box"><img src="images/teckstacks/css.png"><p>CSS</p></div>
+                <div class="tech-box"><img src="images/teckstacks/git.png"><p>GIT/GITHUB</p></div>
+                <div class="tech-box"><img src="images/teckstacks/vscode.png"><p>VSCode</p></div>
+            </div>
+
+            <div class="tech-column">
+                <h3>Languages</h3>
+                <div class="tech-box"><img src="images/teckstacks/java.png"><p>Java</p></div>
+                <div class="tech-box"><img src="images/teckstacks/c.png"><p>C</p></div>
+                <div class="tech-box"><img src="images/teckstacks/python.png"><p>Python</p></div>
+            </div>
+
+            <div class="tech-column">
+                <h3>Database</h3>
+                <div class="tech-box"><img src="images/teckstacks/oracle.png"><p>Oracle</p></div>
+            </div>
+
+            <div class="tech-column">
+                <h3>Dev Tools</h3>
+                <div class="tech-box"><img src="images/teckstacks/vscode.png"><p>VSCode</p></div>
+                <div class="tech-box"><img src="images/teckstacks/intellij.png"><p>IntelliJ</p></div>
+                <div class="tech-box"><img src="images/teckstacks/android.png"><p>Android Studio</p></div>
+            </div>
+
         </div>
+    </section>
 
-        <div class="tech-column">
-            <h3>Languages</h3>
-            <div class="tech-box"><img src="images/teckstacks/java.png"><p>Java</p></div>
-            <div class="tech-box"><img src="images/teckstacks/c.png"><p>C</p></div>
-            <div class="tech-box"><img src="images/teckstacks/python.png"><p>Python</p></div>
-        </div>
+    <!-- Vanta Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
 
-        <div class="tech-column">
-            <h3>Database</h3>
-            <div class="tech-box"><img src="images/teckstacks/oracle.png"><p>Oracle</p></div>
-        </div>
-
-        <div class="tech-column">
-            <h3>Dev Tools</h3>
-            <div class="tech-box"><img src="images/teckstacks/vscode.png"><p>VSCode</p></div>
-            <div class="tech-box"><img src="images/teckstacks/intellij.png"><p>IntelliJ</p></div>
-            <div class="tech-box"><img src="images/teckstacks/android.png"><p>Android Studio</p></div>
-        </div>
-
-    </div>
-</section>
+    <!-- External JS -->
+    <script src="script.js"></script>
 
 </body>
 </html>

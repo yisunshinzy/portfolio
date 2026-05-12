@@ -9,34 +9,12 @@
 <body>
 
     <div id="background"></div>
-    <div class="container"></div>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
-    <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      VANTA.WAVES({
-        el: "#background",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200,
-        minWidth: 200,
-        scale: 1,
-        scaleMobile: 1,
-        color: 0x3c3c3c,
-        shininess: 51,
-        waveHeight: 11,
-        waveSpeed: 0.3,
-        zoom: 0.65
-      });
-    });
-    </script>
-   
+
     <header class="header">
         <div class="logo">
             <a href="index.html">Dan Jared Viernes</a>
         </div>
-   
+
         <nav>
             <a href="about.html" class="active">About</a>
             <a href="certifications.html">Certifications</a>
@@ -44,30 +22,44 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-   
 
-<section id="about" class="section">
-<div class="about">
+    <section id="about" class="section">
 
-    <div class="about-self">
-        <h2 class = "abouttitle">About</h2>
-        <p>
-            I am a BSIT Student with a strong interest in being a developer. Outside of my studies, I am big into basketball,
-            I love making plays with my teams. I also spend a lot of my free time playing valorant, which actually helped spark
-            my initial interest in programming. Also I am a huge fan of trying new foods, especially finding the best food spots
-            in the area. 
-        </p>
-        <p>
-            My experience in basketball court has shaped my professional outlook.
-            I believe that the best technical solutions come from high-performing teams.
-            Also I want to create applications that are as engaging as the game I play, focusing
-            on making applications that is more accessible and enjoyable for every user.
-        </p>
-    </div>
+        <div class="about">
 
-</div>
-</section>
+            <div class="about-self">
 
+                <h2 class="abouttitle">About</h2>
+
+                <p>
+                    I am a BSIT Student with a strong interest in being a developer.
+                    Outside of my studies, I am big into basketball,
+                    I love making plays with my teams.
+                    I also spend a lot of my free time playing Valorant,
+                    which actually helped spark my initial interest in programming.
+                    Also, I am a huge fan of trying new foods,
+                    especially finding the best food spots in the area.
+                </p>
+
+                <p>
+                    My experience on the basketball court has shaped my professional outlook.
+                    I believe that the best technical solutions come from high-performing teams.
+                    I also want to create applications that are as engaging as the games I play,
+                    focusing on making applications more accessible and enjoyable for every user.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Vanta Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
 
 </body>
 </html>

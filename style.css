@@ -1,10 +1,9 @@
-/* ---------- GLOBAL ---------- */
+/* ---------- WHOLE ---------- */
 html{
     scroll-behavior: smooth;
 }
 body{
-    margin:0;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 0;
     color:white;
     overflow-x: hidden;
 }
@@ -21,17 +20,17 @@ body{
 
 /* ---------- HEADER ---------- */
 .header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    display:flex;  
-    justify-content:space-between;  
-    align-items:center;  
-    padding:20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px 40px;
     background:rgba(0,0,0,0.4);
-    backdrop-filter:blur(5px);
-    z-index:10;
+    backdrop-filter: blur(5px);
+    z-index: 10;
     box-sizing: border-box;
 }
 .header nav {
@@ -45,10 +44,10 @@ body{
     text-decoration: none;
 }
 .header nav a{
-    text-decoration:none;
+    text-decoration: none;
     color:white;
-    font-size:16px;
-    transition:0.3s;
+    font-size: 16px;
+    transition: 0.3s;
 }
 .header nav a:hover{
     color:rgb(31, 31, 31);
@@ -100,27 +99,25 @@ body{
     text-align: center;
 }
 .about{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
     flex-wrap: wrap;
     margin-top: 10px;
 }
 .about-self{
-    max-width:1000px;
+    max-width: 1000px;
     
 }
 .about-self h2{
-    font-size:46px;
+    font-size: 46px;
 }
 .about-self p{
-    font-size:28px;
-    line-height:1.8;
+    font-size: 28px;
+    line-height: 1.8;
     text-align: center;
 }
-
-
 
 /* ---------- CERTIFICATIONS ---------- */
 
@@ -130,13 +127,11 @@ body{
     flex-wrap: wrap;
     gap: 40px;
 }
-
 .certification {
     text-align: center;
     font-size: 40px;
     margin-bottom: 30px;
 }
-
 /* CARD STYLE */
 .certificate {
     width: 400px;
@@ -210,41 +205,101 @@ body{
     cursor: pointer;
 }
 
+/* ---------- TECH STACK ---------- */
 
-/* ----------TECH STACK---------- */
 .techstacks{
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: white;
 }
-.tech{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-}
-.tech-column {
-    text-align:center;
-    font-size: 15px;
-}
-.tech-box {
-    background:rgb(255, 255, 255);
-    color:black;
-    padding:26px;
-    margin-top:10px;
-    border-radius:8px;
-}
-.tech-box img {
-    width:50px;
-}
+/* ---------- SLIDER ---------- */
 
-  
+.slider{
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+    );
+}
+.slider .list{
+    display: flex;
+    width: 100%;
+    min-width: calc(300px * 13);
+    position: relative;
+}
+.slider .list .item{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 100%;
+    animation: autoRun 55s linear infinite;
+    animation-delay: calc(
+        (55s / 13) * (var(--position) - 1) - 55s
+    ) !important;
+}
+/* ---------- ANIMATION ---------- */
 
+@keyframes autoRun{
+    from{
+        left: 100%;
+    }
+
+    to{
+        left: -300px;
+    }
+}
+/* ---------- TECH BOX ---------- */
+.tech-box{
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s ease;
+}
+/* Hover Effect */
+.tech-box:hover{
+    transform: translateY(-10px) scale(1.03);
+    background: rgba(255,255,255,0.18);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+/* ---------- IMAGE ---------- */
+.tech-box img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+/* ---------- TEXT ---------- */
+
+.tech-box p{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+}
 
 /* ----------CONTACT---------- */
 .contact-section {
     text-align: center;
     font-size: 30px;
 }
-
 .btn {
     padding: 12px 25px;
     background: #3e3e3e;
@@ -253,10 +308,7 @@ body{
     margin: 10px;
     display: inline-block;
 }
-
 .btn:hover {
     background: #656565;
 }
-
-
 

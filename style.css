@@ -6,6 +6,9 @@ body{
     margin: 0;
     color:white;
     overflow-x: hidden;
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* ----------BACKGROUND---------- */

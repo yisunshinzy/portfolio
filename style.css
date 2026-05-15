@@ -318,3 +318,381 @@ body{
     background: #656565;
 }
 
+/* DESKTOP (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    /* ---------- HEADER ---------- */
+    .header{
+        padding: 18px 30px;
+    }
+
+    .logo a{
+        font-size: 24px;
+    }
+
+    .header nav a{
+        font-size: 15px;
+    }
+
+    /* ---------- HOME ---------- */
+    .home{
+        padding: 0 40px;
+    }
+
+    .home-content{
+        gap: 30px;
+    }
+
+    .home-text h1{
+        font-size: 50px;
+    }
+
+    .home-info h1{
+        font-size: 34px;
+    }
+
+    .subtitle{
+        font-size: 16px;
+    }
+
+    .home-image img{
+        width: 220px;
+    }
+
+    /* ---------- SECTION ---------- */
+    .section{
+        padding: 100px 50px;
+    }
+
+    /* ---------- ABOUT ---------- */
+    .about{
+        gap: 60px;
+    }
+
+    .about-self h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .about-self p{
+        font-size: 24px;
+    }
+
+    /* ---------- CERTIFICATE ---------- */
+    .certificate{
+        width: 320px;
+    }
+
+    /* ---------- TECH STACK ---------- */
+    .techstacks{
+        font-size: 50px;
+    }
+
+    .slider{
+        height: 300px;
+    }
+
+    .slider .list .item{
+        width: 250px;
+        height: 250px;
+    }
+
+    .tech-box img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .tech-box p{
+        font-size: 20px;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact-section{
+        font-size: 26px;
+    }
+}
+
+/* TABLET (321px to 768px) */
+@media screen and (min-width: 321px) and (max-width: 768px){
+
+    /* ---------- HEADER ---------- */
+    .header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .logo a{
+        font-size: 22px;
+    }
+
+    .header nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header nav a{
+        font-size: 14px;
+    }
+
+    /* ---------- HOME ---------- */
+    .home{
+        height: auto;
+        padding: 140px 25px 80px;
+    }
+
+    .home-content{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-text h1{
+        font-size: 42px;
+    }
+
+    .home-info h1{
+        font-size: 30px;
+    }
+
+    .subtitle{
+        font-size: 15px;
+    }
+
+    .home-image img{
+        width: 200px;
+    }
+
+    /* ---------- SECTION ---------- */
+    .section{
+        padding: 90px 25px;
+    }
+
+    /* ---------- ABOUT ---------- */
+    .about{
+        gap: 40px;
+    }
+
+    .about-self h2{
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .about-self p{
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    /* ---------- CERTIFICATION ---------- */
+    .certification{
+        font-size: 32px;
+    }
+
+    .cert{
+        gap: 25px;
+    }
+
+    .certificate{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .cert-name{
+        font-size: 15px;
+    }
+
+    .cert-verify{
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    /* ---------- MODAL ---------- */
+    .modal-content{
+        width: 90%;
+    }
+
+    .close{
+        font-size: 32px;
+        right: 20px;
+    }
+
+    /* ---------- TECH STACK ---------- */
+    .techstacks{
+        font-size: 42px;
+    }
+
+    .slider{
+        height: 260px;
+    }
+
+    .slider .list .item{
+        width: 220px;
+        height: 220px;
+    }
+
+    .tech-box{
+        border-radius: 20px;
+    }
+
+    .tech-box img{
+        width: 85px;
+        height: 85px;
+    }
+
+    .tech-box p{
+        font-size: 18px;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact-section{
+        font-size: 22px;
+    }
+
+    .btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* MOBILE (32px and below) */
+@media screen and (max-width: 320px){
+
+    /* ---------- HEADER ---------- */
+    .header{
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 10px;
+    }
+
+    .logo a{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .header nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .header nav a{
+        font-size: 12px;
+    }
+
+    /* ---------- HOME ---------- */
+    .home{
+        height: auto;
+        padding: 130px 15px 60px;
+    }
+
+    .home-content{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .home-text h1{
+        font-size: 32px;
+    }
+
+    .home-info h1{
+        font-size: 24px;
+    }
+
+    .subtitle{
+        font-size: 13px;
+    }
+
+    .home-image img{
+        width: 150px;
+    }
+
+    /* ---------- SECTION ---------- */
+    .section{
+        padding: 70px 15px;
+    }
+
+    /* ---------- ABOUT ---------- */
+    .about{
+        gap: 25px;
+    }
+
+    .about-self h2{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .about-self p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* ---------- CERTIFICATIONS ---------- */
+    .certification{
+        font-size: 26px;
+    }
+
+    .certificate{
+        width: 100%;
+    }
+
+    .cert-name{
+        font-size: 14px;
+    }
+
+    .cert-verify{
+        font-size: 12px;
+        padding: 7px 14px;
+    }
+
+    /* ---------- MODAL ---------- */
+    .modal-content{
+        width: 95%;
+    }
+
+    .close{
+        font-size: 28px;
+        right: 15px;
+    }
+
+    /* ---------- TECH STACK ---------- */
+    .techstacks{
+        font-size: 32px;
+    }
+
+    .slider{
+        height: 220px;
+    }
+
+    .slider .list .item{
+        width: 180px;
+        height: 180px;
+    }
+
+    .tech-box{
+        border-radius: 18px;
+    }
+
+    .tech-box img{
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .tech-box p{
+        font-size: 15px;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact-section{
+        font-size: 18px;
+    }
+
+    .btn{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 13px;
+    }
+}
